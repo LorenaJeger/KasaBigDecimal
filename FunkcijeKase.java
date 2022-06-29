@@ -55,7 +55,7 @@ public class FunkcijeKase implements Funkcije {
         }}
 
     private String printStavke(final Stavka s){
-        return s.getArtikalObject().getNaziv()+"   "+s.cijena+"   "+ s.kolicina + "    "+ s.iznos;
+        return s.getArtikalObject().getNaziv()+"   "+s.getCijena()+"   "+ s.getKolicina() + "    "+ s.getIznos();
     }
     @Override
     public List<Artikal> dodajArtikal(final List<Artikal>listaArtikala,final Artikal a){
@@ -75,12 +75,10 @@ public class FunkcijeKase implements Funkcije {
         return listaRacuna;
     }
 
-
     private static Stavka usporedbaObjekata(final Stavka s1, final Stavka s2) {
         if (s1.equals(s2)) {
             s1.setKolicina(s1.getKolicina()+s2.getKolicina());
-            s1.setIznos(new BigDecimal(String.valueOf(s1.iznos)).add(s2.iznos));
- 
+            s1.setIznos(s1.getIznos().add(s2.getIznos()));
 
             return s1;
         }
