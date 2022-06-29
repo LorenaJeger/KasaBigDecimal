@@ -26,7 +26,7 @@ public class Racun  {
     public List<Stavka> getListaStavaka() {
         return this.ListaStavaka;
     }
-    public  Racun( final int br, final List<Stavka> s){
+    public Racun( final int br, final List<Stavka> s){
         brRacuna=br;
         this.suma=izracunSume(s);
         this.ListaStavaka =s;

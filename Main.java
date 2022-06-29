@@ -20,9 +20,9 @@ public class Main {
         Artikal artikalBanana= kasaBin.kreirajArtikal("Banana", "03", (new BigDecimal("9.9")), true);
 
 
-        kasaBin.dodajArtikal(kasa.asortimanArtikala,artikalMlijeko);
-        kasaBin.dodajArtikal(kasa.asortimanArtikala,artikalKava);
-        kasaBin.dodajArtikal(kasa.asortimanArtikala,artikalBanana);
+        kasaBin.dodajArtikal(kasa.getAsortimanArtikala(),artikalMlijeko);
+        kasaBin.dodajArtikal(kasa.getAsortimanArtikala(),artikalKava);
+        kasaBin.dodajArtikal(kasa.getAsortimanArtikala(),artikalBanana);
 
 
         Stavka stavkaMlijeko= kasaBin.kreirajStavku(artikalMlijeko, 10);
@@ -62,12 +62,12 @@ public class Main {
 
         Racun racunDva= kasaBin.kreirajRacun(2,listStavaka2);
 
-        kasaBin.dodajRacun(kasa.listaRacuna,racunJedan);
-        kasaBin.dodajRacun(kasa.listaRacuna,racunDva);
-        //kasaBin.obrisiRacun(kasa.listaRacuna,racunDva);
+        kasaBin.dodajRacun(kasa.getListaRacuna(),racunJedan);
+        kasaBin.dodajRacun(kasa.getListaRacuna(),racunDva);
+        //kasaBin.obrisiRacun(kasa.getListaRacuna(),racunDva);
 
 
-        kasaBin.IspisRacuna(kasa.listaRacuna);
+        kasaBin.IspisRacuna(kasa.getListaRacuna());
 
     }
 

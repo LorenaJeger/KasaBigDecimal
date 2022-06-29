@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 public class Artikal {
     private final String naziv;
     private final String sifra;
-    protected BigDecimal cijena;
+    private BigDecimal cijena;
     private final boolean promjenjivaCijena;
 
     public String getNaziv() {
