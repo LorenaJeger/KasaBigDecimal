@@ -35,7 +35,7 @@ public class Racun  {
         this.datum= (dtf.format(now));
     }
     private BigDecimal izracunSume(final List<Stavka> stavkeRacuna){
-        BigDecimal sum = new BigDecimal(0);
+        BigDecimal sum = BigDecimal.ZERO;
         for( Stavka s: stavkeRacuna)
                 sum= sum.add(s.getIznos()) ;
         return sum;

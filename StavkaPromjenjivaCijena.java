@@ -19,8 +19,7 @@ class StavkaPromjenjivaCijena extends Stavka {
     }
 
     private BigDecimal izracunajIznosNoveStavke(){
-        BigDecimal iznos=new BigDecimal(0.0);
-        iznos= cijena.multiply(new BigDecimal(kolicina));
+        BigDecimal iznos= cijena.multiply(new BigDecimal(kolicina));
         return iznos;
     }
 
