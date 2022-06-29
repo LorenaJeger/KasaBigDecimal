@@ -34,10 +34,10 @@ public  class Stavka{
     protected void izmjenaCijeneFunkcija( final BigDecimal novaCijena) {
     }
 
-    protected void setIznos(final BigDecimal iznos) {
+    public void setIznos(final BigDecimal iznos) {
         this.iznos = iznos;
     }
-    protected void setKolicina(final Integer kolicina) {
+    public void setKolicina(final Integer kolicina) {
         this.kolicina = kolicina;
     }
 

@@ -21,7 +21,7 @@ public class Artikal {
     public boolean getPromjenjivaCijena() {
         return this.promjenjivaCijena;
     }
-    protected void setCijena(BigDecimal cijena) {
+    public void setCijena(BigDecimal cijena) {
         this.cijena = cijena;
     }
 
